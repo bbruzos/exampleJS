@@ -24,7 +24,8 @@ d3.json("data/data.json").then((incomingData) => {
   var trace = {
     x: titles,
     y: ratings,
-    type: "bar"
+    type: "bar",
+    text: ['The Best Movies'],
   };
 
   // Create the data array for our plot
@@ -34,7 +35,8 @@ d3.json("data/data.json").then((incomingData) => {
   var layout = {
     title: "The highest critically acclaimed movies.",
     xaxis: { title: "Title" },
-    yaxis: { title: "Metascore (Critic) Rating"}
+    yaxis: { title: "Metascore (Critic) Rating"},
+    bargap: 0.1
   };
 
   // Plot the chart to a div tag with id "bar-plot"

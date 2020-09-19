@@ -25,7 +25,7 @@ d3.json("data/data.json").then((incomingData) => {
     x: titles,
     y: ratings,
     type: "bar",
-    text: ['The Best Movies'],
+    text: ['The Best Movies', 'The Best Movies', 'The Best Movies', 'The Best Movies'],
   };
 
   // Create the data array for our plot
